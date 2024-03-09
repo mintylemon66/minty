@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.noto-sans jp-<uniquifier> {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+body{
+  font-family:"Poppins";
+   background-color:#1f2c1c;  
+   text-align:center; 
+    
+  top:50%;
+  
+ 
+} 
+.color-box{ background-color: rgb(29, 57, 42);  
+   
+ }
+ 
+a {
+    color: #e6ffe2;
+  }
+
+hr{
+    height: 1px;
+    background-color: #627f75;
+    border: none;
+}
+button{
+    font-family:'Poppins';
+    font-weight: bold;
+    color: #fff;
+    background-color: #20490f;
+    padding 1em 2em;
+    border:none;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    margin:10px;
+    height:45px;
+    width:125px;;
+    border-radius:6rem;
+}
+button span:not(:nth-child(6)){
+    background:#359c25;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    height:30px; 
+    width:30px;
+    border-radius:50%;
+    transition: 0.6s ease;
+
+}
+button span:nth-child(6){
+    position:relative;
+}
+button span:nth-child(1){
+    transform:translate(-3.3em,-4em);
+}
+button span:nth-child(2){
+    transform:translate(-6em,1.3em);
+}
+button span:nth-child(3){
+    transform:translate(-.2em,1.8em);
+}  
+button span:nth-child(4){
+    transform:translate(3.5em,1.4em);
+}
+button span:nth-child(5){
+    transform:translate(3.5em,4em);
+}
+button:hover span:not(:nth-child(6)){
+    transform:translate(-50%,-50%);
+    transition:1.5s ease; 
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  *{
+    margin:0;
+    padding: 0;
+  } 
+  .wrapper{
+    width: 90%;
+    margin: 0 auto; 
+  }
+  header{
+    width:100%;
+    height:100px;
+    background: #429878;
+    position:fixed;
+  }
+
+  .logo{
+    width:30%;
+    float:left;
+    text-align: left;
+    line-height:100px;
+  }
+  .logo a{
+    text-decoration:none;
+    font-size:30px;
+    font-family:'Pacifico';
+    color: #fff
+    letter-spacing:4px;
+  }
+  nav{
+    float:right;
+    line-height:100px;
+  }
+  nav a{
+    text-decoration:none;
+    font-family:'Poppins'; 
+    letter-spacing:2px;
+    font-size:20px;
+    color: #fff;
+    padding: 25px;  
+    margin: 0 1px;
+    font-weight:500;
+  }
+  nav a:hover{
+    background: #fff;
+    color: #696307d8;
+ 
+  }
+.banner-area{
+    background-image: url(Images/calabi-yau-manifold.jpeg);
+    background-size:cover;
+    background-position: center center;
+    top:100px;
+    height:100vh;
+    width:100%;
+    position:fixed;
+
+}
+.banner-area:after{
+    content:'';
+    position:absolute;
+    top:0; 
+    left:0;
+    display:black;
+    width:100%;
+    height:100%;
+    background: #429878;
+    opacity:.6;
+    z-index:-1;
+}
+.banner-area h2{
+    padding-top:8%;
+    font-size:80px;
+    color:#fff;
+}
+.content-area{
+    width: 100%;
+ 
+    position:relative;
+    background:#1f2c1c;
+    top:600px;
+}
+.content-area h2{
+    font-size: 40px;
+    margin:0;
+    padding-top:30px;
+    letter-spacing:2px;
+
+}
+.conten-area p{
+    padding : 2% 0; 
+    line-height:  30px;
+    text-align:justify;
+
+}
+  h1{
+	 
+    size: 79px ;
+   color: #d4e9e2; 
+} 
+
+
+h2,h3,h4,h5{
+  
+color:#d4e9e2;
+
+}
+
+h6{
+   color: #d4e9e2;
+}
+p{
+    size:20px;
+   color:#d4e9e2;
+}
+
+a:link {
+color: rgb(197, 226, 206);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:visited {
+color: rgb(184, 238, 255);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover {
+color: rgb(231, 213, 16);
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:active {
+color: rgb(255, 251, 149);
+background-color: transparent;
+text-decoration: underline;
+}
