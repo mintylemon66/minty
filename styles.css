@@ -19,7 +19,7 @@
   
 body{
   font-family:"Poppins";
-   background-color:#1f2c1c;  
+   background-color:rgb(86, 173, 132);  
    text-align:center; 
     
   top:50%;
@@ -48,10 +48,12 @@ button{
     border:none;
     position:relative;
     cursor:pointer;
+    padding: 10px 20px;
     overflow:hidden;
     margin:10px;
-    height:45px;
-    width:125px;;
+    height: fit-content;
+    width: fit-content;
+ 
     border-radius:6rem;
 }
 button span:not(:nth-child(6)){
@@ -63,7 +65,7 @@ button span:not(:nth-child(6)){
     height:30px; 
     width:30px;
     border-radius:50%;
-    transition: 0.6s ease;
+    transition: 0.3s ease;
 
 }
 button span:nth-child(6){
@@ -212,21 +214,21 @@ button:hover span:not(:nth-child(6)){
   }
 
   .logo{
-    width:30%;
-    float:left;
-    text-align: left;
-    line-height:100px;
+ 
+    float:right;
+    text-align: right;
+    line-height:50px;
+ 
   }
   .logo a{
     text-decoration:none;
-    font-size:30px;
+    font-size:60px;
     font-family:'Pacifico';
-    color: #fff
-    letter-spacing:4px;
+    color: #fff 
   }
   nav{
-    float:right;
-    line-height:100px;
+    float:left;
+    line-height:50px;
   }
   nav a{
     text-decoration:none;
@@ -238,16 +240,88 @@ button:hover span:not(:nth-child(6)){
     margin: 0 1px;
     font-weight:500;
   }
-  nav a:hover{
-    background: #fff;
-    color: #696307d8;
+  .navbar a:hover{
+    background: #012607;
+    color: #cfffcfd8;
  
   }
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(86, 173, 132);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  .dropdown {
+    float: left; 
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 30px;  
+
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+   left:0px;
+ 
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: rgb(9, 96, 79);
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-family:'Poppins';
+    position: absolute;
+    background-color: rgb(59, 93, 75);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #07492c;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+
+
+
+  
 .banner-area{
     background-image: url(Images/calabi-yau-high-res.jpg);
     background-size:cover;
     background-position: center center;
-    top:100px;
+    top:70px;
     height:100vh;
     width:100%;
     position:fixed;

@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible"   content="IE=edge, chrome=1"/>
+	 	<meta http-equiv="X-UA-Compatible"   content="IE=edge, chrome=1"/>
 		<meta name= "viewport" content = "width=device=width, initial-scale=1.0">
 		<title>Mintylemon: Mathematicians</title>
 		<link rel="stylesheet" href="styles.css">
@@ -11,19 +11,38 @@
 
 	<body> 
 			<div class="box-area">
-				<header>
-					<div class="wrapper">
-						<div class="logo">
-							<a href ="minty-home.html">Mintylemon</a>
-						</div>
-						<nav>
-							<a href="minty-home.html">Home</a>
-							<a href="minty-mathematicians.html">Mathematicians</a>
-							<a href="minty-features.html">Features</a>
-						</nav>
-
+				<div class="navbar">
+  
+					<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()" >☰
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+					  <a href="index.html">Home</a>
+					  <a href="minty-mathematicians.html">Mathematicians</a>
+					  <a href="minty-features.html">Features</a>
 					</div>
-				</header>
+					 
+				  </div>
+				  <div class="logo">
+					<a href ="index.html">Mintylemon</a>
+				  </div>
+				  </div>  
+				  
+				  <script> 
+					  function myFunction() {
+						document.getElementById("myDropdown").classList.toggle("show");
+					  }
+					   
+					  window.onclick = function(e) {
+						if (!e.target.matches('.dropbtn')) {
+						var myDropdown = document.getElementById("myDropdown");
+						  if (myDropdown.classList.contains('show')) {
+							myDropdown.classList.remove('show');
+						  }
+						}
+					  }
+					  </script>
 			 
 
 				<div class = "banner-area" background-image: ;>
@@ -89,7 +108,7 @@
 							<span class="circle3"></span>
 							<span class="circle4"></span>
 							 <span class="circle5"></span>
-							<span class="text"><a href="#">Bernoullis</a></span>
+							<span class="text"><a href="#">Bernoulli</a></span>
 						</button>
 						<button>
 							<span class="circle1"></span>
@@ -255,7 +274,7 @@
 							<span class="circle3"></span>
 							<span class="circle4"></span>
 							<span class="circle5"></span>
-							<span class="text"><a href="#">Kumme</a>r</span>
+							<span class="text"><a href="#">Kummer</a></span>
 						</button>
 						<button>
 							<span class="circle1"></span>

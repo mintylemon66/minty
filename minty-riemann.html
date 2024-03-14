@@ -11,22 +11,41 @@
 
 	<body> 
 			<div class="box-area">
-				<header>
-					<div class="wrapper">
-						<div class="logo">
-							<a href ="minty-home.html">Mintylemon</a>
-						</div>
-						<nav>
-							<a href="minty-home.html">Home</a>
-							<a href="minty-mathematicians.html">Mathematicians</a>
-							<a href="minty-features.html">Features</a>
-						</nav>
-
+				<div class="navbar">
+  
+					<div class="dropdown">
+					<button class="dropbtn" onclick="myFunction()" >☰
+					  <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content" id="myDropdown">
+					  <a href="index.html">Home</a>
+					  <a href="minty-mathematicians.html">Mathematicians</a>
+					  <a href="minty-features.html">Features</a>
 					</div>
-				</header>
+					 
+				  </div>
+				  <div class="logo">
+					<a href ="index.html">Mintylemon</a>
+				  </div>
+				  </div>  
+				  
+				  <script> 
+					  function myFunction() {
+						document.getElementById("myDropdown").classList.toggle("show");
+					  }
+					   
+					  window.onclick = function(e) {
+						if (!e.target.matches('.dropbtn')) {
+						var myDropdown = document.getElementById("myDropdown");
+						  if (myDropdown.classList.contains('show')) {
+							myDropdown.classList.remove('show');
+						  }
+						}
+					  }
+					  </script>
 			 
 
-				<div class = "banner-area">
+				<div class = "banner-area" background-image: url(Images/riemann-sum.png);>
 					<h2>Riemann</h2>
 				</div>
 				<div class = "content-area">
@@ -35,11 +54,14 @@
 						 
 						<p>Georg Friedrich Bernhard Riemann (17 September 1826 – 20 July 1866) was a German mathematician who made profound contributions to analysis, number theory, and differential geometry. He is considered by many to be one of the greatest mathematicians of all time.</p>  
 						 
+						<br>
+					 
+						<h3><a href="https://character.ai/chat/WTp1KKKWERvt-nT7r52dPigd9Oi7NHBp2ZXEu4EAGq0">Chat with Riemann! </a></h3>
 
 						<h2>Math</h2> 
 						<br>
-						<p>Section under construction</p>
-						<br>
+					  
+						
 						<h3>Riemannian Geometry</h3>
 						<p>Riemann found the correct way to extend into n dimensions the differential geometry of surfaces</p>
 						<br>
