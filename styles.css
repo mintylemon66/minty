@@ -282,7 +282,7 @@ button:hover span:not(:nth-child(6)){
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color: rgb(9, 96, 79);
+    background-color: rgb(86, 173, 132);
   }
   
   .dropdown-content {
